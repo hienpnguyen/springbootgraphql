@@ -1,0 +1,17 @@
+type Query {
+    person : [Person]
+    findById(id : ID!) : Person
+    findByFirstName(firstName : String!) : Person
+}
+
+type Person {
+    id : ID!
+    firstName : String
+    lastName : String
+    address : Address
+}
+
+type Address {
+    id : ID!
+    address : String
+}
